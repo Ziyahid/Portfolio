@@ -118,10 +118,16 @@ nav{
     padding-top: 10%;
 } 
 
+.sec2img{
+    width: 400px;
+}
+
 .sec2img img{
     height: 500px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
+    object-fit: contain;
+
 }
 
 .sec2cont{
@@ -170,6 +176,22 @@ nav{
 
 .tab-links.active-link::after{
     width: 50%;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+#skills ul li div{
+    width: 50px;
+    height: 60px;
+}
+
+#skills ul li img{
+    width: 100%;
+    object-fit: fill;
 }
 
 .tab-contents{
@@ -279,8 +301,12 @@ a{
 
 .work-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+    height: 55vh;
+    overflow: hidden;
+    transition: height 0.3s ease;
     
 }
 
@@ -290,11 +316,14 @@ a{
     width: 100%;
     border-radius: 10px;
     transition: transform 0.5s;
+    height: 100%;
+    object-fit: cover;
 }
 
 .work{
     position: relative;
     width: 500px;
+    height: auto;
 }
 
 .mywork button{
@@ -347,7 +376,7 @@ a{
     font-size: 18px;
     line-height: 60px;
     background-color: white;
-    width: 60px;
+    width:60px;
     height: 60px;
     border-radius: 50%;
 }
@@ -394,12 +423,17 @@ a{
     font-size: 20px;
 }
 
-.logos{
+.logos {
     display: flex;
     gap: 20px;
     font-size: 28px;
     padding: 10px;
+    align-items: center;
     color: #d1cfcf;
+}
+
+.logos a:hover{
+    color: #868282;
 }
 
 .contact-1 button{
@@ -573,15 +607,6 @@ a{
        
     }
 
-    .work-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        
-        
-    }
 
     .contact{
         flex-direction: column;
@@ -600,16 +625,9 @@ a{
         width: 100px;
         margin-left: 30%;
     }
-    .work img{
-        height:100%;
-        width: 100%;
 
-    }
 
-    .work {
-        position: relative;
-        width: 200px;
-    }
+  
 
 
     .contact {
@@ -626,10 +644,45 @@ a{
         font-size: 3rem;
     }
 
+    
+
+
 
     
 
 
+    
+}
+
+@media screen and (max-width:768px) {
+
+    .work-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        height: 50vh;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    .work{
+        width: 100%;
+        height: auto;
+
+        
+    }
+
+    .work img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .layer {
+        width: 100%;
+        
+    }
     
 }
 

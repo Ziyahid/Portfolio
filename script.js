@@ -45,3 +45,8 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message))
 })
 
+function seeMore(){
+    const container = document.querySelector(".work-container");
+    container.style.height="100%"
+}
+
