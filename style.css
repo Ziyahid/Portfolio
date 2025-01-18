@@ -557,15 +557,6 @@ a{
         flex-direction: column;
     }
 
-    .sec2 img{
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 40px;
-        border-radius: 10px;
-
-        
-    }
 
     .sec2cont p{
         font-size: 18px;
@@ -683,6 +674,21 @@ a{
         width: 100%;
         
     }
+
+    .sec2img{
+        width: 400px;
+        display: grid;
+        place-items: center;
+        padding:0px 30px;
+    }
+
+    .sec2img img{
+        width: 100%;
+
+    }
+    
+
+    
     
 }
 
