@@ -558,9 +558,6 @@ a{
     }
 
 
-    .sec2cont p{
-        font-size: 18px;
-    }
     .sec2cont{
         padding: 40px;
         width: 100%;
@@ -687,6 +684,17 @@ a{
 
     }
     
+    .about-me{
+        font-size: 12px;
+        text-align: left;
+        
+    }
+
+    .sec2cont p{
+        text-align:justify;
+    }
+
+
 
     
     
